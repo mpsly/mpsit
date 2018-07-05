@@ -1,0 +1,6 @@
+*.log
+*.temp
+/video
+*.iml
+/target
+/.idea

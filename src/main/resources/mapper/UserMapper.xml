@@ -1,0 +1,21 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.mpsit.StudentDemo.mapper.UserMapper">
+
+    <resultMap id="user" type="cn.mpsit.StudentDemo.bean.UserBean">
+        <id column="studentid" property="studentid"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+    </resultMap>
+
+    <select id="login"   resultMap="user">
+        select * from USER where 1=1
+        <if test="username != null">
+            AND username = #{username}
+        </if>
+        <if test="password != null">
+            AND password = #{password}
+        </if>
+    </select>
+</mapper>
