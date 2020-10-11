@@ -141,7 +141,7 @@
     <dependency>
       <groupId>com.mchange</groupId>
       <artifactId>c3p0</artifactId>
-      <version>0.9.5.2</version>
+      <version>0.9.5.4</version>
     </dependency>
 
     <!-- fastdfs-client-java-1.27-SNAPSHOT.jar   FastDFS 文件系统所需jar包-->
